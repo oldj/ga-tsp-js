@@ -1,0 +1,67 @@
+body {
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  background: #fff;
+}
+
+#wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+#operations {
+  padding: 10px 0;
+}
+
+#operations button {
+  background: #09f;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#operations button:hover {
+  background: #0bf;
+}
+#operations button:disabled {
+  background: #999;
+  cursor: default;
+}
+
+#info {
+  padding: 10px 0;
+}
+
+#footer {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #999;
+}
+
+#footer a {
+  margin: 1em 0;
+}
+
+@media only screen and (max-width: 800px) {
+  h1, #operations, #info, #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

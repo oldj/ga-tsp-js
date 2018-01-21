@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>TSP</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+
+<div id="wrapper">
+	<h1>Travelling salesman problem</h1>
+
+	<div id="operations">
+		<button id="btn-random">random</button>
+		<button id="btn-start">start</button>
+		<button id="btn-stop" disabled>stop</button>
+	</div>
+
+	<div id="info">
+		Generation: <span id="gen">0</span>
+		<!--Mutation: <span id="mutation">0</span>-->
+	</div>
+
+	<div id="container">
+		<canvas id="c"></canvas>
+	</div>
+
+	<div id="footer">
+		&copy; oldj.net
+		<a href="https://github.com/oldj/tsp-ga-js">Source</a>
+	</div>
+</div>
+
+<script src="build/jquery-3.2.1.min.js"></script>
+<script src="build/bundle.js"></script>
+</body>
+</html>
