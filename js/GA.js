@@ -18,7 +18,7 @@ export default class GA {
     this.scores = 0 // 总得分
     this.best = null
 
-    this.judge = options.judge
+    this.rate = options.rate
     this.xFunc = options.xFunc
     this.mFunc = options.mFunc
 
@@ -30,13 +30,13 @@ export default class GA {
   /**
    * 根据传入的方法，计算每个个体的得分
    */
-  doJudge () {
+  doRate () {
     //let last_avg = this.scores / this.life_count
     this.scores = 0
     let last_best_score = -1
 
     this.lives.map(lf => {
-      lf.setScore(this.judge(lf.gene))
+      lf.setScore(this.rate(lf.gene))
       if (lf.score > last_best_score) {
         last_best_score = lf.score
         this.best = lf
@@ -85,7 +85,7 @@ export default class GA {
   next () {
     this.generation++
 
-    this.doJudge()
+    this.doRate()
     let new_lives = []
     new_lives.push(this.best) // 将最好的父代加入竞争
     new_lives.push(new Life(this.gene_length)) // 加入一个随机值

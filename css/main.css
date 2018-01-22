@@ -53,10 +53,22 @@ canvas {
   margin: 10px 0;
   font-size: 12px;
   color: #999;
+  min-height: 30px;
 }
 
-#footer a {
-  margin: 1em 0;
+#footer span.ln {
+  float: left;
+}
+
+#footer span.ln:after {
+  content: '|';
+  color: #ccc;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#footer span.ln:last-child:after {
+  content: none;
 }
 
 @media only screen and (max-width: 800px) {

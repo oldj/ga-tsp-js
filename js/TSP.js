@@ -58,13 +58,13 @@ export default class TSP {
       life_count: this.life_count,
       mutation_rate: this.mutation_rate,
       gene_length: this.n,
-      judge: this.judge.bind(this),
+      rate: this.rate.bind(this),
       xFunc: this.xFunc.bind(this),
       mFunc: this.mFunc.bind(this)
     })
   }
 
-  judge (gene) {
+  rate (gene) {
     return 1 / this.getDistance(gene)
   }
 
