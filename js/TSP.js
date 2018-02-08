@@ -125,6 +125,7 @@ export default class TSP {
     let {nodes} = this
     order.concat(order[0]).reduce((a, b) => {
       d += Math.sqrt(Math.pow(nodes[a].x - nodes[b].x, 2) + Math.pow(nodes[a].y - nodes[b].y, 2))
+      //d += Math.hypot(nodes[a].x - nodes[b].x, 2, nodes[a].y - nodes[b].y, 2)
       return b
     })
     return d
