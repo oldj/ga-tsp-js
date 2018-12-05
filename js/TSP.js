@@ -147,6 +147,7 @@ export default class TSP {
       ctx.moveTo(na.x * dr, na.y * dr)
       ctx.lineTo(nb.x * dr, nb.y * dr)
       ctx.stroke()
+      ctx.closePath()
       return b
     })
 
@@ -159,6 +160,7 @@ export default class TSP {
       ctx.arc(n.x * dr, n.y * dr, r * dr, 0, 2 * Math.PI)
       ctx.fill()
       ctx.stroke()
+      ctx.closePath()
     })
     $('#gen').html(this.ga.generation)
     //$('#mutation').html(this.ga.mutation_count)
