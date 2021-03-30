@@ -2,4 +2,4 @@
 
 Travelling Salesman Problem with GA and JavaScript.
 
-Demo: [https://oldj.net/static/tsp/ga/](https://oldj.net/static/tsp/ga/)
+Demo: [https://oldj.net/static/tsp/ga/index.html](https://oldj.net/static/tsp/ga/index.html)
